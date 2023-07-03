@@ -2,6 +2,7 @@ CREATE TABLE Cliente (
   codcli    int4 NOT NULL UNIQUE, 
   cpfcli    numeric(11, 0) NOT NULL UNIQUE, 
   nomcli    varchar(40) NOT NULL, 
+  sexcli    char(1), 
   datnascli date, 
   telcli    varchar(20), 
   endcli    varchar(80) NOT NULL, 
@@ -10,6 +11,7 @@ CREATE TABLE Cliente (
 COMMENT ON COLUMN Cliente.codcli IS 'Código do Cliente';
 COMMENT ON COLUMN Cliente.cpfcli IS 'CPF do Cliente';
 COMMENT ON COLUMN Cliente.nomcli IS 'Nome do Cliente';
+COMMENT ON COLUMN Cliente.sexcli IS 'Sexo do Cliente';
 COMMENT ON COLUMN Cliente.datnascli IS 'Data de Nascimento do Cliente';
 COMMENT ON COLUMN Cliente.telcli IS 'Telefone do Cliente';
 COMMENT ON COLUMN Cliente.endcli IS 'Endereço do Cliente';
