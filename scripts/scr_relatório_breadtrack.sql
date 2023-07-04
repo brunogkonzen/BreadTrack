@@ -1,12 +1,12 @@
 --1) Relação de clientes com o nome, sexo e idade em ordem crescente de nome. Relacionar somente clientes cadastrados antes de 2023;
 SELECT nomcli, sexcli, EXTRACT(YEAR FROM AGE(datnascli)) AS idade
 FROM Cliente
-WHERE datnascli < '2023-01-01'
+WHERE datcadcli < '2023-01-01'
 ORDER BY nomcli ASC;
 
 
 --2) Relação de produtos(nome e descrição) vendidos nos meses pares de 2022. Ordene o relatório pelo nomedo produto de forma ascendente;
-SELECT p.nompro, p.proenc
+SELECT p.nompro, e.proenc
 FROM Produto p
 INNER JOIN Encomenda e ON p.codpro = e.codpro
 WHERE EXTRACT(YEAR FROM e.datenc) = 2022

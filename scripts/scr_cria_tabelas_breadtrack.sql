@@ -42,7 +42,7 @@ CREATE TABLE Encomenda (
   endenc varchar(40) NOT NULL, 
   proenc varchar(120) NOT NULL, 
   cpfcli numeric(11, 0) NOT NULL,
-  qtdproenc integer(4) NOT NULL, 
+  qtdproenc int4 NOT NULL, 
   PRIMARY KEY (codenc, 
   codcli, 
   cpfcli));

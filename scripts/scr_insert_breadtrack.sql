@@ -44,14 +44,14 @@ INSERT INTO Funcionario (codfun, cnpj, codset, nomfun, sexfun, datnasfun, carhor
 VALUES 
   (1, 123456789, 1, 'Adriana Cardoso', 'M', '1995-01-01', '40 horas'),
   (2, 123456789, 2, 'Felipe de Morais', 'M', '1990-05-10', '30 horas'),
-  (3, 987654321, 1, 'Rogerio Miller', 'M', '1988-12-15', '40 horas'),
-  (4, 987654321, 3, 'Maria Furlan ', 'F', '1992-07-20', '30 horas'),
-  (5, 555555555, 1, 'Paulo Lopes', 'M', '1993-09-05', '40 horas');
+  (3, 123456789, 1, 'Rogerio Miller', 'M', '1988-12-15', '40 horas'),
+  (4, 123456789, 3, 'Maria Furlan ', 'F', '1992-07-20', '30 horas'),
+  (5, 123456789, 1, 'Paulo Lopes', 'M', '1993-09-05', '40 horas');
 
  
 INSERT INTO Padaria (cnpj, nomfanpad, endpad, telpad)
 VALUES 
-  (555555555, 'Padaria Bread-Track', 'Rua Primeiro de Julho, 789', '333333333');
+  (123456789, 'Padaria Bread-Track', 'Rua Primeiro de Julho, 789', '333333333');
 
 INSERT INTO Produto (codpro, codven, nompro, vlrpro, vldpro, qtdest, codenc, codcli)
 VALUES
@@ -98,7 +98,7 @@ VALUES
 INSERT INTO Setor (codset, funset, nomset)
 VALUES 
   (1, 'Atendimento', 'Setor de Atendimento'),
-  (2, 'Produção', 'Setor de Produção')
+  (2, 'Produção', 'Setor de Produção'),
   (3, 'Limpeza', 'Setor de Limpeza');
 
 
@@ -111,8 +111,8 @@ VALUES
 
 INSERT INTO Venda (codven, codcli, cnpj, datven, qtdven, vlrven, cpfcli)
 VALUES 
-  (1, 1, 123456789, '2023-07-01', 2, 3.00, 12345678901),
-  (2, 2, 987654321, '2023-07-01', 1, 25.00, 98765432109),
-  (3, 3, 123456789, '2023-07-01', 5, 10.00, 45678912304),
-  (4, 4, 987654321, '2023-07-01', 3, 10.50, 78912345607),
-  (5, 5, 555555555, '2023-07-01', 4, 7.20, 32165498702);
+  (1, 1, 123456789, '2022-08-01', 2, 3.00, 12345678901),
+  (2, 2, 123456789, '2023-07-01', 1, 25.00, 98765432109),
+  (3, 3, 123456789, '2022-07-01', 5, 10.00, 45678912304),
+  (4, 4, 123456789, '2022-06-01', 3, 10.50, 32165498707),
+  (5, 5, 123456789, '2023-07-01', 4, 7.20, 74185296300);
