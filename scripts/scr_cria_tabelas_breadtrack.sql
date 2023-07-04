@@ -100,8 +100,7 @@ COMMENT ON COLUMN Padaria.telpad IS 'Telefone da Padaria';
 
 
 CREATE TABLE Produto (
-  codpro SERIAL NOT NULL, 
-  codven int4 NOT NULL, 
+  codpro SERIAL NOT NULL,  
   nompro varchar(40) NOT NULL, 
   vlrpro numeric(5, 2) NOT NULL, 
   vldpro varchar(20) NOT NULL, 
@@ -111,7 +110,6 @@ CREATE TABLE Produto (
   PRIMARY KEY (codpro));
 COMMENT ON TABLE Produto IS 'Tabela de Cadastro de Produto';
 COMMENT ON COLUMN Produto.codpro IS 'Código do Produto';
-COMMENT ON COLUMN Produto.codven IS 'Código da Venda';
 COMMENT ON COLUMN Produto.nompro IS 'Nome do Produto';
 COMMENT ON COLUMN Produto.vlrpro IS 'Valor do Produto';
 COMMENT ON COLUMN Produto.vldpro IS 'Validade do Produto';
