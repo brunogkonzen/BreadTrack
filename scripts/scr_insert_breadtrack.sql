@@ -4,11 +4,11 @@ VALUES
   (2, 98765432109, 'Maria Souza', '1985-05-10', '888888888', 'Avenida Avelino de Matias , 456','F','2009-05-06'),
   (3, 45678912304, 'Carlos Ferreira', '1998-08-15', '777777777', 'Rua do Cristo, 789','M','2023-09-21'),
   (4, 32165498707, 'Ana Oliveira', '1992-03-20', '666666666', 'Avenida Brasil, 321','F','2020-10-30'),
-  (5, 74185296300, 'Lucas Santos', '1995-12-25', '555555555', 'Rua Aurelio, 987','M','2005-03-11'),
-  (6, 95637265311, 'Arthur Costa', '2000-05-29', '444444444', 'Avenida João Pedro, 454','M','2023-07-03'),
+  (5, 74185296300, 'Lucas Santos', '2023-12-25', '555555555', 'Rua Aurelio, 987','M','2005-03-11'),
+  (6, 95637265311, 'Arthur Costa', '2023-05-29', '444444444', 'Avenida João Pedro, 454','M','2023-07-03'),
   (7, 85743421321, 'Matheus Machado', '1989-08-21', '111111111', 'Rua Almeida, 768','M','2021-03-02'),
   (8, 87548725382, 'Marcelo Freitas', '2004-06-02', '222222222', 'Rua Garcia, 990','M','2006-07-29'),
-  (9, 98565263516, 'Clarice Marques', '2001-02-02', '333333333', 'Avenida Carlos Alberto, 321','M', '2023-06-01' ),
+  (9, 98565263516, 'Clarice Marques', '2023-02-02', '333333333', 'Avenida Carlos Alberto, 321','M', '2023-06-01' ),
   (10, 12319243412, 'Fabio Charnoski', '2000-07-26', '101010101', 'Avenida Paulista, 666','M', '2023-02-04');
 
 
@@ -68,7 +68,7 @@ VALUES
   (11, 1, 'Pão Integral', 2.00, '10 dias', 60, 11, 1),
   (12, 2, 'Torta de Limão', 28.00, '15 dias', 8, 12, 2),
   (13, 3, 'Pastel de Carne', 2.50, '2 dias', 40, 13, 3),
-  (14, 4, 'Bolo de Fubá', 3.00, '5 dias', 15, 14, 4),
+  (14, 4, 'Bolo de Fubå', 3.00, '5 dias', 15, 14, 4),
   (15, 5, 'Cachorro-Quente', 5.00, '1 dias', 35, 15, 5),
   (16, 1, 'Brioche', 2.80, '4 dias', 25, 16, 1),
   (17, 2, 'Torta de Morango', 30.00, '10 dias', 10, 17, 2),

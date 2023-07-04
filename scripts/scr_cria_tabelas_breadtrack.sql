@@ -77,13 +77,13 @@ CREATE TABLE Funcionario (
   datnasfun date, 
   carhorfun varchar(20) NOT NULL, 
   PRIMARY KEY (codfun));
-COMMENT ON TABLE Funcionario IS 'Tabela de Cadastro de Funcionário';
-COMMENT ON COLUMN Funcionario.codfun IS 'Código do Funcionário';
-COMMENT ON COLUMN Funcionario.codset IS 'Código do Setor do Funcionário';
-COMMENT ON COLUMN Funcionario.nomfun IS 'Nome do Funcionário';
-COMMENT ON COLUMN Funcionario.sexfun IS 'Sexo do Funcionário';
-COMMENT ON COLUMN Funcionario.datnasfun IS 'Data de Nascimento do Funcionário';
-COMMENT ON COLUMN Funcionario.carhorfun IS 'Carga Horária do Funcionário';
+COMMENT ON TABLE Funcionario IS 'Tabela de Cadastro de Funcionårio';
+COMMENT ON COLUMN Funcionario.codfun IS 'Código do Funcionårio';
+COMMENT ON COLUMN Funcionario.codset IS 'Código do Setor do Funcionårio';
+COMMENT ON COLUMN Funcionario.nomfun IS 'Nome do Funcionårio';
+COMMENT ON COLUMN Funcionario.sexfun IS 'Sexo do Funcionårio';
+COMMENT ON COLUMN Funcionario.datnasfun IS 'Data de Nascimento do Funcionårio';
+COMMENT ON COLUMN Funcionario.carhorfun IS 'Carga Horåria do Funcionårio';
 
 
 CREATE TABLE Padaria (
@@ -138,7 +138,7 @@ CREATE TABLE Setor (
 COMMENT ON TABLE Setor IS 'Tabela de Cadastro do Setor';
 COMMENT ON COLUMN Setor.codset IS 'Código do Setor';
 COMMENT ON COLUMN Setor.funset IS 'Função do Setor';
-COMMENT ON COLUMN Setor.nomset IS 'Nome do Setor do Funcionário';
+COMMENT ON COLUMN Setor.nomset IS 'Nome do Setor do Funcionårio';
 
 
 CREATE TABLE Veiculo (
@@ -183,4 +183,4 @@ ALTER TABLE ProdutoFornecedor ADD CONSTRAINT FKProdutoFor834255 FOREIGN KEY (cod
 ALTER TABLE ProdutoFornecedor ADD CONSTRAINT FKProdutoFor239414 FOREIGN KEY (codfor) REFERENCES Fornecedor (codfor);
 ALTER TABLE Venda ADD CONSTRAINT FKVenda345088 FOREIGN KEY (codcli, cpfcli) REFERENCES Cliente (codcli, cpfcli);
 ALTER TABLE Encomenda ADD CONSTRAINT FKEncomenda511952 FOREIGN KEY (codpro) REFERENCES Produto (codpro);
-ALTER TABLE Funcionario ADD CONSTRAINT FKFuncionari369823 FOREIGN KEY (cnpj) REFERENCES Padaria (cnpj);
+ALTER TABLE Funcionario ADD CONSTRAINT FKFuncionario369823 FOREIGN KEY (cnpj) REFERENCES Padaria (cnpj);
