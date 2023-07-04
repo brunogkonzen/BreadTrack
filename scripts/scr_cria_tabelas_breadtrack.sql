@@ -2,10 +2,11 @@ CREATE TABLE Cliente (
   codcli    int4 NOT NULL UNIQUE, 
   cpfcli    numeric(11, 0) NOT NULL UNIQUE, 
   nomcli    varchar(40) NOT NULL, 
-  sexcli    char(1), 
   datnascli date, 
   telcli    varchar(20), 
   endcli    varchar(80) NOT NULL, 
+  sexcli char(1) NOT NULL,
+  datcadcli date NOT NULL,
   PRIMARY KEY (codcli, 
   cpfcli));
 COMMENT ON COLUMN Cliente.codcli IS 'Código do Cliente';
@@ -40,7 +41,8 @@ CREATE TABLE Encomenda (
   datenc date NOT NULL, 
   endenc varchar(40) NOT NULL, 
   proenc varchar(120) NOT NULL, 
-  cpfcli numeric(11, 0) NOT NULL, 
+  cpfcli numeric(11, 0) NOT NULL,
+  qtdproenc integer(4) NOT NULL, 
   PRIMARY KEY (codenc, 
   codcli, 
   cpfcli));
@@ -50,6 +52,7 @@ COMMENT ON COLUMN Encomenda.codcli IS 'Código do Cliente';
 COMMENT ON COLUMN Encomenda.datenc IS 'Data da Encomenda';
 COMMENT ON COLUMN Encomenda.endenc IS 'Endereço da Encomenda';
 COMMENT ON COLUMN Encomenda.proenc IS 'Produto da Encomenda';
+COMMENT ON COLUMN Encomenda.qtdproenc IS 'Quantidade de produto da encomenda';
 
 
 CREATE TABLE Fornecedor (
@@ -101,7 +104,7 @@ CREATE TABLE Produto (
   codven int4 NOT NULL, 
   nompro varchar(40) NOT NULL, 
   vlrpro numeric(5, 2) NOT NULL, 
-  vldpro date NOT NULL, 
+  vldpro varchar(20) NOT NULL, 
   qtdest int4 NOT NULL, 
   codenc int4 NOT NULL, 
   codcli int4 NOT NULL, 
@@ -141,7 +144,7 @@ COMMENT ON COLUMN Setor.nomset IS 'Nome do Setor do Funcionário';
 CREATE TABLE Veiculo (
   plavei varchar(7) NOT NULL, 
   cnpj   int4 NOT NULL, 
-  modvei int4 NOT NULL, 
+  modvei varchar(20) NOT NULL, 
   anovei int4 NOT NULL, 
   PRIMARY KEY (plavei));
 COMMENT ON TABLE Veiculo IS 'Tabela de Cadastro de Veículo';
