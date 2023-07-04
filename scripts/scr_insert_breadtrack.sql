@@ -24,11 +24,11 @@ VALUES
  
 INSERT INTO Encomenda (codenc, codcli, codpro, qtdproenc, datenc, endenc, proenc, cpfcli)
 VALUES 
-  (1, 1, 1,50, '2023-07-02', 'Rua 25 de Março, 123', 'Pães franceses', 12345678901),
-  (2, 2, 2,3, '2023-07-02', 'Avenida Avelino de Matias , 456', 'Bolo de Chocolate', 98765432109),
-  (3, 3, 3,100, '2023-07-02', 'Rua do Cristo, 789', 'Salgados Fritos Sortidos', 45678912304),
-  (4, 4, 4,50, '2023-07-02', 'Avenida Brasil, 321', 'Docinhos Sortidos', 32165498707),
-  (5, 5, 5,5, '2023-07-02', 'Rua Aurelio, 987', 'Pão de Milho', 74185296300);
+  (1, 1, 1,50, '2023-06-02', 'Rua 25 de Março, 123', 'Pães franceses', 12345678901),
+  (2, 2, 2,3, '2023-06-02', 'Avenida Avelino de Matias , 456', 'Bolo de Chocolate', 98765432109),
+  (3, 3, 3,100, '2023-06-02', 'Rua do Cristo, 789', 'Salgados Fritos Sortidos', 45678912304),
+  (4, 4, 4,50, '2023-06-02', 'Avenida Brasil, 321', 'Docinhos Sortidos', 32165498707),
+  (5, 5, 5,5, '2023-06-02', 'Rua Aurelio, 987', 'Pão de Milho', 74185296300);
 
  
 INSERT INTO Fornecedor (codfor, nomfor, marfor, telfor)
