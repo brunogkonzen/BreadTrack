@@ -7,8 +7,8 @@ create user Leo with login createdb password '4';
 create group consultsa;
 create group operador;
 
-grant select on funcionario to consulta;
-grant select, insert, delete, update on funcionario to operador;
+grant select on estoque to consulta;
+grant select, insert, delete, update on estoque, produto to operador;
 
 grant operador to Leo;
 grant consulta to Arthut;
