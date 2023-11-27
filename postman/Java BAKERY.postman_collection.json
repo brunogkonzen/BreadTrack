@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "60340c69-644d-4555-9162-93d36121fa1a",
+		"name": "Java BAKERY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31349060"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codcli\": \"24\",\r\n    \"cpfcli\": \"55326071986\",\r\n    \"nomcli\": \"Maria Helena\",\r\n    \"datnascli\": \"2002-10-08\",\r\n    \"telcli\": \"49991720437\",\r\n    \"endcli\": \"Duque de Caxias, 1591\", \r\n    \"sexcli\": \"M\",\r\n    \"datcadcli\": \"2023-11-23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conta",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"debcon\": 150.00,\r\n    \"codcli\": 1,\r\n    \"crecon\": 0.00,\r\n    \"datcon\": \"2023-07-01\",\r\n    \"cpfcli\": 12345678901\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/conta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"debcon\": 150.00,\r\n    \"codcli\": {\r\n        \"codcli\": 3\r\n    },\r\n    \"crecon\": 0.00,\r\n    \"datcon\": \"2023-07-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/conta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Encomenda",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fornecedor",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venda",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Procurar venda com produtos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datven\": \"2022-08-01\",\r\n    \"qtdven\": 30,\r\n    \"vlrven\": 650.30,\r\n    \"cpfcli\": 12345678901,\r\n    \"padaria\": {\r\n        \"cnpj\": 123456789\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProdutoVenda",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datven\": \"2022-08-01\",\r\n    \"qtdven\": 30,\r\n    \"vlrven\": 650.30,\r\n    \"cpfcli\": 12345678901,\r\n    \"padaria\": {\r\n        \"cnpj\": 123456789\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Padaria",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datven\": \"2022-08-01\",\r\n    \"qtdven\": 30,\r\n    \"vlrven\": 650.30,\r\n    \"cpfcli\": 12345678901,\r\n    \"padaria\": {\r\n        \"cnpj\": 123456789\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setor",
+			"item": [
+				{
+					"name": "Procurar um",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"datven\": \"2022-08-01\",\r\n    \"qtdven\": 30,\r\n    \"vlrven\": 650.30,\r\n    \"cpfcli\": 12345678901,\r\n    \"padaria\": {\r\n        \"cnpj\": 123456789\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codenc\": 1,\r\n    \"datenc\": \"2022-06-02\",\r\n    \"endenc\": \"Rua 25 de Março, 123\",\r\n    \"proenc\": \"Pães franceses\",\r\n    \"cpfcli\": 12345678901,\r\n    \"qtdproenc\": 50,\r\n    \"produto\": {\r\n        \"codpro\": 1\r\n    },\r\n    \"cliente\": {\r\n        \"codcli\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/encomenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"encomenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facades",
+			"item": [
+				{
+					"name": "Fluxo de venda",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
