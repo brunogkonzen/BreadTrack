@@ -1,4 +1,4 @@
 # BreadTrack
-# Autores: Arthur Gruber, Arthur Kochem e Bruno Konzen (Jair Augusto Scrocaro).
-# Disciplina: Banco de Dados I.
-# Sistema Gerenciador de Banco de Dados de uma Padaria.
+# Autores: Arthur Gruber, Arthur Kochem, Bruno Konzen e Leonardo Costa.
+# Disciplina: Banco de Dados II, Engenharia de Software I e Programação II.
+# Software integrado com um banco de dados para um sistema de uma padaria.
